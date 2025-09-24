@@ -28,119 +28,130 @@ class HabitatScreen extends StatelessWidget {
                 colors: themeManager.adaptiveGradientColors,
               ),
             ),
-            child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 60, left: 16, right: 16),
-                    child: InkWell(
-                      onTap: () => Navigator.pop(context),
-                      child: Row(
-                        children: [
-                          Icon(Icons.arrow_back, color: themeManager.gradientTextColor, size: 24),
-                          const SizedBox(width: 8),
-                          Text(
-                            'Volver',
-                            style: GoogleFonts.poppins(
-                                color: themeManager.gradientTextColor,
-                                fontSize: 18
-                            ),
-                          ),
-                        ],
-                      ),
+            // Usa LayoutBuilder para obtener la altura de la pantalla
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                return SingleChildScrollView(
+                  // Usa ConstrainedBox para asegurar una altura mínima
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(
+                      minHeight: constraints.maxHeight,
                     ),
-                  ),
-                  const SizedBox(height: 20),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 24.0),
-                    child: Center(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            ecosystem.name,
-                            style: GoogleFonts.poppins(
-                                color: themeManager.gradientTextColor,
-                                fontSize: 36,
-                                fontWeight: FontWeight.bold
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                          Text(
-                            ecosystem.description,
-                            style: GoogleFonts.poppins(
-                                color: themeManager.gradientSecondaryTextColor,
-                                fontSize: 16
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 30),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 24.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Row(
-                          children: [
-                            Icon(
-                                Icons.location_on,
-                                color: themeManager.isDarkMode
-                                    ? const Color(0xFFE4F00E)
-                                    : themeManager.primaryColor,
-                                size: 28
+                        Padding(
+                          padding: const EdgeInsets.only(top: 60, left: 16, right: 16),
+                          child: InkWell(
+                            onTap: () => Navigator.pop(context),
+                            child: Row(
+                              children: [
+                                Icon(Icons.arrow_back, color: themeManager.gradientTextColor, size: 24),
+                                const SizedBox(width: 8),
+                                Text(
+                                  'Volver',
+                                  style: GoogleFonts.poppins(
+                                      color: themeManager.gradientTextColor,
+                                      fontSize: 18
+                                  ),
+                                ),
+                              ],
                             ),
-                            const SizedBox(width: 8),
-                            Text(
-                              'Hábitats Disponibles',
-                              style: GoogleFonts.poppins(
-                                color: themeManager.gradientTextColor,
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          'Cada hábitat alberga especies únicas adaptadas a sus condiciones específicas. Explora y descubre la vida que prospera en cada rincón.',
-                          style: GoogleFonts.poppins(
-                            color: themeManager.gradientSecondaryTextColor,
-                            fontSize: 14,
                           ),
                         ),
+                        const SizedBox(height: 20),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                          child: Center(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  ecosystem.name,
+                                  style: GoogleFonts.poppins(
+                                      color: themeManager.gradientTextColor,
+                                      fontSize: 36,
+                                      fontWeight: FontWeight.bold
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                Text(
+                                  ecosystem.description,
+                                  style: GoogleFonts.poppins(
+                                      color: themeManager.gradientSecondaryTextColor,
+                                      fontSize: 16
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 30),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Icon(
+                                      Icons.location_on,
+                                      color: themeManager.isDarkMode
+                                          ? const Color(0xFFE4F00E)
+                                          : themeManager.primaryColor,
+                                      size: 28
+                                  ),
+                                  const SizedBox(width: 8),
+                                  Text(
+                                    'Hábitats Disponibles',
+                                    style: GoogleFonts.poppins(
+                                      color: themeManager.gradientTextColor,
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 8),
+                              Text(
+                                'Cada hábitat alberga especies únicas adaptadas a sus condiciones específicas. Explora y descubre la vida que prospera en cada rincón.',
+                                style: GoogleFonts.poppins(
+                                  color: themeManager.gradientSecondaryTextColor,
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 24),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                          child: GridView.count(
+                            crossAxisCount: 2,
+                            shrinkWrap: true,
+                            physics: const NeverScrollableScrollPhysics(),
+                            crossAxisSpacing: 16,
+                            mainAxisSpacing: 16,
+                            childAspectRatio: 0.7,
+                            children: habitats.map((habitat) {
+                              return _buildHabitatGridCard(context, habitat, themeManager);
+                            }).toList(),
+                          ),
+                        ),
+                        const SizedBox(height: 24),
                       ],
                     ),
                   ),
-                  const SizedBox(height: 24),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                    child: GridView.count(
-                      crossAxisCount: 2,
-                      shrinkWrap: true,
-                      physics: const NeverScrollableScrollPhysics(),
-                      crossAxisSpacing: 16,
-                      mainAxisSpacing: 16,
-                      childAspectRatio: 0.7,
-                      children: habitats.map((habitat) {
-                        return _buildHabitatGridCard(context, habitat, themeManager);
-                      }).toList(),
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-                ],
-              ),
+                );
+              },
             ),
           ),
         );
       },
     );
   }
-
+  // Resto del código...
   Widget _buildHabitatGridCard(BuildContext context, Habitat habitat, ThemeManager themeManager) {
     return InkWell(
       onTap: () {
