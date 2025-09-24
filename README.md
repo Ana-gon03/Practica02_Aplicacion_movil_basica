@@ -436,7 +436,76 @@ Bottom Sheet / Dialog
 </div>
 
 ---
-## 📸 Capturas
+## 📸 Capturas TEMA OSCURO
+
+## 🌍 Nivel 1 – Ecosistemas
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4858acfd-d562-4c50-abb6-67bbcdf8e936" width="250">
+  <img src="https://github.com/user-attachments/assets/169af379-5936-4718-be04-d73356aa56b2" width="250">
+  <img src="https://github.com/user-attachments/assets/a09e9b9e-9148-4412-92a7-6d75e0610495" width="250">
+</p>
+
+## 🏞️ Nivel 2 – Hábitat
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d18c5da7-65ff-4bcc-9364-0443f5fd09e9" width="250">
+  <img src="https://github.com/user-attachments/assets/8cb93229-56a6-41d7-af7e-9304e0d4e05a" width="250">
+  <img src="https://github.com/user-attachments/assets/b6807a79-e811-4580-8416-bd2eba14eb3b" width="250">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/db6b6253-bbc9-495b-a9f5-42f348bf3c9d" width="250">
+  <img src="https://github.com/user-attachments/assets/79ab510c-515b-4970-9964-de18a8e99c6c" width="250">
+</p>
+
+
+## 🐆 Nivel 3 – Animal
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d18cc080-835e-414a-b998-7beb2b0e0dd3" width="250">
+  <img src="https://github.com/user-attachments/assets/a2f58194-29df-46d9-ab6d-c7fc19bc8638" width="250">
+  <img src="https://github.com/user-attachments/assets/37816be0-38be-464c-abb0-c56360df8f12" width="250">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7a5478b3-0ecd-475d-809e-1e7adf73257e" width="250">
+  <img src="https://github.com/user-attachments/assets/d55be85f-c12d-4a5e-8428-41c90f761f52" width="250">
+</p>
+
+
+---
+## 📸 Capturas TEMA OSCURO
+
+## 🌍 Nivel 1 – Ecosistemas
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0204f22c-ce98-4f23-a12c-7fa1c708075c" width="250">
+  <img src="https://github.com/user-attachments/assets/ae34e700-2fbd-4a19-a08a-216b3a60f415" width="250">
+  <img src="https://github.com/user-attachments/assets/81e4976f-418f-41a5-a2bc-9286bb229f06" width="250">
+</p>
+
+
+## 🏞️ Nivel 2 – 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2859d539-41c1-442b-8d1f-0a4c695cecc8" width="250">
+  <img src="https://github.com/user-attachments/assets/78f28b6e-13ed-4f00-9a34-115c115f3662" width="250">
+  <img src="https://github.com/user-attachments/assets/13ef72c8-ce88-4cbf-ade2-2cfd0252f933" width="250">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/684c22b2-5fc2-4220-b179-ad8a50ed9c32" width="250">
+  <img src="https://github.com/user-attachments/assets/62dba103-d457-4ab0-8305-9e70ee537f70" width="250">
+</p>
+
+
+## 🐆 Nivel 3 – Animal
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/849cc1cd-d319-45a6-a669-02f5131e3fc7" width="250">
+  <img src="https://github.com/user-attachments/assets/3894a91a-e06e-4dfc-a7c9-7cab6ca35d32" width="250">
+  <img src="https://github.com/user-attachments/assets/aed570a1-d36c-4b79-9af9-a5ad0ad238ef" width="250">
+</p>
+
 
 ---
 
